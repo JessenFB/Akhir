@@ -26,7 +26,7 @@
                     <tr class="hover:bg-gray-100">
                         <td class="px-6 py-4">{{ $album->nama }}</td>
                         <td class="px-6 py-4">{{ $album->artist->nama ?? 'No Nama' }}</td>
-                        <td class="px-6 py-4">{{ $album->release_date }}</td> <!-- Pastikan kolom ini sesuai dengan yang ada di database -->
+                        <td class="px-6 py-4">{{ $album->tahun_keluar }}</td> <!-- Pastikan kolom ini sesuai dengan yang ada di database -->
                         <td class="px-6 py-4 text-center">
                             <a href="{{ route('albums.edit', $album->id) }}" class="text-blue-500 hover:text-blue-700">Edit</a>
                             <form action="{{ route('albums.destroy', $album->id) }}" method="POST" class="inline-block">
